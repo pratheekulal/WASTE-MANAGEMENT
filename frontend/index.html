@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waste Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Waste Management and Complaint Handling</h1>
+
+  
+  <section id="complaint-form">
+    <h2>Report a Complaint</h2>
+    <form id="newComplaintForm">
+      <label for="description">Description:</label>
+      <textarea id="description" required></textarea>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" required />
+
+      <label for="missedPickups">Missed Pickups:</label>
+      <input type="number" id="missedPickups" min="0" value="0" />
+
+      <label for="healthRisk">Health Risk:</label>
+      <input type="checkbox" id="healthRisk" />
+
+      <button type="submit">Submit Complaint</button>
+    </form>
+  </section>
+
+  
+  <section id="view-complaints">
+    <h2>View Complaints</h2>
+    <button id="fetchComplaints">Fetch Complaints</button>
+    <ul id="complaintList"></ul>
+  </section>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
